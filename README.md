@@ -1,3 +1,24 @@
+cd frontend
+npm i
+npm run dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .impact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
