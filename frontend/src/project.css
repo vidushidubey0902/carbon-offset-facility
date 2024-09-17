@@ -1,0 +1,72 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .projects-setion{
+  background-color: #a81212;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+} */
+
+.card1 {
+  /* margin: 20px; */
+  padding: 15px;
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  border-radius: 10px;
+  width: calc(92% );
+  background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card{
+  margin: 0px;
+  padding: 1px;
+  border: 1px solid #ced0b5;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  border-radius: 10px;
+  width: calc(92% );
+  background-color: rgb(250, 225, 211);
+    box-shadow: 1px 7px 70px rgba(0, 0, 0, 0.1);
+}

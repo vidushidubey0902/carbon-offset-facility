@@ -1,0 +1,246 @@
+/* Container for the credit section */
+.credit-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styling */
+.head h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.head p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Grid layout for the cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  gap: 20px; /* Space between the cards */
+  margin-top: 30px;
+}
+
+/* Styling for individual cards */
+.credit-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.credit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.credit-card h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.credit-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.credit-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Market rate and balance section */
+.market-balance-card {
+  background-color: #f0f8ff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Buy/Sell carbon credits card */
+.buy-sell-card {
+  background-color: #e9f5e1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for the input */
+.credit-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Button styles */
+.buy-sell-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.buy-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sell-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.buy-button:hover,
+.sell-button:hover {
+  opacity: 0.9;
+}
+
+/* Full-width transaction history card */
+.transaction-history-card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-history-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.transaction-history-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Table styling for transaction history */
+.transaction-history-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-history-card th, .transaction-history-card td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.transaction-history-card th {
+  background-color: #f1f1f1;
+}
+
+.transaction-history-card tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transaction-history-card tr:hover {
+  background-color: #e1e1e1;
+}
+/* Dialog Overlay */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Darker backdrop for emphasis */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px); /* Subtle blur effect for a frosted glass appearance */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dialog Box */
+.dialog-box {
+  background: #fdfdfd; /* Softer white for less strain on the eyes */
+  padding: 30px;
+  border-radius: 15px; /* More rounded corners for a smoother feel */
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow for a floating effect */
+  text-align: center;
+  animation: slideUp 0.4s ease-out; /* Slide-up animation for entry */
+}
+
+/* Dialog Title */
+.dialog-box h2 {
+  font-size: 20px;
+  color: #333; /* Darker color for emphasis */
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px; /* Slight letter spacing for a refined look */
+}
+
+/* Dialog Message */
+.dialog-box p {
+  font-size: 16px;
+  color: #666; /* Light text for balance */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Close Button */
+.close-dialog-button {
+  padding: 12px 30px;
+  background-color: #ff4d4f; /* Bold, vibrant color for the close button */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Fully rounded button for a unique style */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.close-dialog-button:hover {
+  background-color: #ff7875;
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+.close-dialog-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 77, 79, 0.5); /* Soft focus ring */
+}
+
+/* Slide-up Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
